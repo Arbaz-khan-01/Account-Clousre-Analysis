@@ -144,15 +144,3 @@ Original file is located at
 # else:
 #     st.info("👆 Please upload your bank dataset to begin")
 
-from pyngrok import ngrok
-
-# Add your token here
-ngrok.set_auth_token("3CifysYIwXoNMhaByArqJhPY1Xs_6T1dvrnxH8pfT6PBTjCxo")
-
-public_url = ngrok.connect(8501)
-print(public_url)
-
-!streamlit run app.py &
-
-!streamlit run app.py & npx localtunnel --port 8501
-
